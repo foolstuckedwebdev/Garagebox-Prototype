@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Hello World Step
-          command: echo "Hello World"
+          name: Cloning Git Repository
+          command: git clone https://github.com/foolstuckedwebdev/Garagebox-Prototype.git /home/circleci/Garagebox-Prototype
 
       - run:
           name: Installing sshpass
