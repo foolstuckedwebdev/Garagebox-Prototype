@@ -10,6 +10,18 @@ jobs:
           name: Hello World Step
           command: echo "Hello World"
 
+      - run:
+          name: Installing sshpass
+          command: sudo apt-get install sshpass
+
+      - run:
+          name: Adding domain to know hosts
+          command: ssh-keyscan -H 18.191.147.139 >> ~/.ssh/known_hosts
+
+      - run:
+          name: Moving to Beta
+          command: sshpass -p $GB_PASS rsync -rlOtvz -e ssh /home/circleci/Garagebox-Prototype/ $GB_USER@54.193.238.27:/var/www/html/Garagebox-Prototype/
+
 workflows:
   version: 2
   build_flow:
@@ -18,3 +30,4 @@ workflows:
           filters:
             branches:
               only: main
+          context: cred
