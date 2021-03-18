@@ -20,7 +20,7 @@ jobs:
 
       - run:
           name: Moving to Beta
-          command: sshpass -p $GB_PASS rsync -rlOtvz -e ssh /home/circleci/Garagebox-Prototype/ ec2-user@18.191.147.139:/var/www/html/Garagebox-Prototype/
+          command: sshpass -p gnssdrrl rsync -rlOtvz -e ssh /home/circleci/Garagebox-Prototype/ ec2-user@18.191.147.139:/var/www/html/Garagebox-Prototype/
 
 workflows:
   version: 2
