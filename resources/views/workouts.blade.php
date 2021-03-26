@@ -31,7 +31,7 @@
 
 @section('home')
     <div class="row">
-        <img id="logo1" class="margin-equal" src="{{ asset('includes/resources/white_home.png') }}">
+        <img id="logo1" class="margin-equal" src="{{ \App\Helpers\appHelper::instance()->getImage('white_home.png') }}">
     </div>
     <div class="row justify-content-center pt-1">
         <span id="tab" class="margin-equal">Home</span>
@@ -40,7 +40,7 @@
 
 @section('wods')
     <div class="row">
-        <img id="logo1" class="margin-equal" src="{{ asset('includes/resources/white_calendar.png') }}">
+        <img id="logo1" class="margin-equal" src="{{ \App\Helpers\appHelper::instance()->getImage('white_calendar.png') }}">
     </div>
     <div class="row justify-content-center pt-1">
         <span id="tab" class="margin-equal">WODs</span>
@@ -49,7 +49,7 @@
 
 @section('workouts')
     <div class="row">
-        <img id="logo1" class="margin-equal" src="{{ asset('includes/resources/blue_dumbbell.png') }}">
+        <img id="logo1" class="margin-equal" src="{{ \App\Helpers\appHelper::instance()->getImage('blue_dumbbell.png') }}">
     </div>
     <div class="row pt-1">
         <span id="active-tab" class="margin-equal">Workouts</span>
@@ -58,7 +58,7 @@
 
 @section('me')
     <div class="row">
-        <img id="logo1" class="margin-equal" src="{{ asset('includes/resources/white_trophy.png') }}">
+        <img id="logo1" class="margin-equal" src="{{ \App\Helpers\appHelper::instance()->getImage('white_trophy.png') }}">
     </div>
     <div class="row pt-1">
         <span id="tab" class="margin-equal">Me</span>

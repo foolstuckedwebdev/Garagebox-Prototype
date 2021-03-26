@@ -3,12 +3,12 @@
         <div class="flex-container">
             <div>
                 @if (Auth::check())
-                    <img id="profile" class="margin-equal mt-3" src="{{ asset('includes/resources/profile_icon_workout.png') }}">
+                    <img id="profile" class="margin-equal mt-3" src="{{ \App\Helpers\appHelper::instance()->getImage('profile_icon_workout.png') }}">
                 @endif
             </div>
             <div class="logo">
                 <a class="navbar-brand margin-equal mt-1" href="/login">
-                    <img id="logo2" src="{{ asset('includes/resources/white_gb_words_logo.png') }}">
+                    <img id="logo2" src="{{ \App\Helpers\appHelper::instance()->getImage('white_gb_words_logo.png') }}">
                 </a>
             </div>
             <div></div>
