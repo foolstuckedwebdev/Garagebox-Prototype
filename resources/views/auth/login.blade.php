@@ -10,7 +10,7 @@
     <div class="row justify-content-center mt-5">
         <div class="d-flex justify-content-center">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img id="logo3" src="{{ \App\Helpers\appHelper::instance()->getImage('Media Files/white_gb_words_logo.png') }}">
+                <img id="logo3" src="{{ \App\Helpers\appHelper::instance()->getImage('white_gb_words_logo.png') }}">
             </div>
         </div>
         <div class="col-md-8">
